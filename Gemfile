@@ -2,10 +2,13 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.0'
 gem 'jquery-rails', '1.0.18'
+gem 'haml'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.5'
   gem 'rspec-rails', '2.8.1'
+  gem 'haml-rails'
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 end
 
 group :assets do
