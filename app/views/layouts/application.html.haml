@@ -15,12 +15,7 @@
 
       %section.round
         - flash.each do |key, value|
-          - if User.exists?
-            .flash.success
-              = value
-          - else
-            .flash.error
-              = value
+          = content_tag(:div, value, class: "flash #{key}")
         = yield
       
       = render 'layouts/footer'
